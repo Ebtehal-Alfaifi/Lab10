@@ -9,6 +9,8 @@ import lombok.NonNull;
 @Data
 @NoArgsConstructor
 @Entity
+@Check(constraints = "role IN ('JOB_SEEKER', 'EMPLOYER')")
+
 // id:
 //- Must be Generated.
 //▪ name:
